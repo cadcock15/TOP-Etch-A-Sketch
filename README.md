@@ -25,6 +25,8 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/)
 * Navigate into repository
 * Open index.html in your web browser
 
+## Known Bugs
+
 ## Project Notes
 
 ### Goals
@@ -35,7 +37,5 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/)
 4. Write ledgible code
 
 ### Outcome
-
-## Known Bugs
 
 Copyright (c) 2023 Christopher Adcock
