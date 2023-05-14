@@ -1,3 +1,25 @@
 /* ==========================================================================
    TOP Etch A Sketch
    ========================================================================== */
+
+
+   .gridFlexbox {
+      display:flex;
+      flex-direction: column;
+   }
+
+   .rowFlexbox, .cells {
+      
+   }
+
+   .rowFlexbox {
+      background-color: green;
+      display: flex;
+   }
+
+   .cells {
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      flex-direction: column;
+   }
