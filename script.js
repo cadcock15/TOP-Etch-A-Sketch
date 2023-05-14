@@ -23,3 +23,21 @@ function createGrid() {
         }
     }
 }
+
+const cellsArray = document.querySelectorAll('div.cells');
+
+/* Event Handlers
+   ========================================================================== */
+
+    cellsArray.forEach((cell) => {
+        cell.addEventListener('mouseover', () => {
+            cell.style.backgroundColor = "pink";
+        });
+        cell.addEventListener('mouseout', () => {
+            
+        });
+        cell.addEventListener('click', () => {
+            cell.style.backgroundColor = "purple";
+        });
+        
+});
