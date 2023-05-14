@@ -6,6 +6,9 @@
    .gridFlexbox {
       display:flex;
       flex-direction: column;
+      width: 800px;
+      height: 800px;
+      background-color: aqua;
    }
 
    .rowFlexbox, .cells {
@@ -15,11 +18,11 @@
    .rowFlexbox {
       background-color: green;
       display: flex;
+      flex: 1 1 auto;
    }
 
    .cells {
       background-color: red;
-      width: 20px;
-      height: 20px;
       flex-direction: column;
+      flex: 1 1 auto;
    }
