@@ -3,6 +3,14 @@
    ========================================================================== */
 
 
+/* Grid
+   ========================================================================== */
+
+/**
+ * 1. prevent being able to click and drag element, Fixes mouse cursor changing 
+ *       to 'grabbing' and preventing click-drag drawing 
+ */
+
    .gridFlexbox {
       display:flex;
       flex-direction: column;
@@ -21,8 +29,10 @@
       flex: 1 1 auto;
    }
 
+
    .cells {
       background-color: red;
       flex-direction: column;
       flex: 1 1 auto;
+      user-select: none; /* 1 */
    }

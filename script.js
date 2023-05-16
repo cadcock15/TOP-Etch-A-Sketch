@@ -31,7 +31,6 @@ const cellsArray = document.querySelectorAll('div.cells');
 
    var draw;
    //DOM Mouse Events for grid
-   //TODO: fix click drag sometimes causing a grab hand and stopping draw
     cellsArray.forEach((cell) => {
         cell.addEventListener('mousedown', () => {
             cell.style.backgroundColor = "pink";
@@ -45,8 +44,5 @@ const cellsArray = document.querySelectorAll('div.cells');
         cell.addEventListener('mouseup', () => {
             draw = false;
         });
-        // cell.addEventListener('click', () => {
-        //     cell.style.backgroundColor = "purple";
-        // });
         
 });
