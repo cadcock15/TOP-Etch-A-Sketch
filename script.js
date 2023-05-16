@@ -29,15 +29,24 @@ const cellsArray = document.querySelectorAll('div.cells');
 /* Event Handlers
    ========================================================================== */
 
+   var draw;
+   //DOM Mouse Events for grid
+   //TODO: fix click drag sometimes causing a grab hand and stopping draw
     cellsArray.forEach((cell) => {
-        cell.addEventListener('mouseover', () => {
+        cell.addEventListener('mousedown', () => {
             cell.style.backgroundColor = "pink";
+            draw = true;
         });
-        cell.addEventListener('mouseout', () => {
-            
+        cell.addEventListener('mouseenter', () => {
+            if(draw) {
+                cell.style.backgroundColor = "pink";
+            }
         });
-        cell.addEventListener('click', () => {
-            cell.style.backgroundColor = "purple";
+        cell.addEventListener('mouseup', () => {
+            draw = false;
         });
+        // cell.addEventListener('click', () => {
+        //     cell.style.backgroundColor = "purple";
+        // });
         
 });
